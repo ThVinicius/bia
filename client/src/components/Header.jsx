@@ -24,7 +24,7 @@ const Header = ({ title }) => {
 };
 
 Header.defaultProps = {
-  title: "BIA 2026 ECS",
+  title: "BIA 2026 CI/CD",
 };
 
 export default Header;
