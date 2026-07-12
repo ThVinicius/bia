@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Instalando Node 21 e npm...
+      - curl -fsSL https://deb.nodesource.com/setup_21.x | bash -
+      - sudo yum install -y nodejs
+  
+  build:
+    commands:
+      - echo Build iniciado em `date`
+      - echo Instalando dependências do projeto...
+      - npm install --loglevel=error
+      - echo Executando testes unitários...
+      - npm test
