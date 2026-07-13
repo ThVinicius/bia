@@ -12,5 +12,5 @@ phases:
   build:
     commands:
       - echo migration iniciado em `date`
-      - npx sequelize db:create
+      - npx sequelize db:create || true
       - npx sequelize db:migrate
