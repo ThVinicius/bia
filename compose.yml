@@ -6,6 +6,6 @@ services:
       - 3001:8080
     environment:
       DB_USER: postgres
-      DB_PWD: nN1C9iqOyz1L2A7HWqL7
-      DB_HOST: bia.c03m8ueqgif2.us-east-1.rds.amazonaws.com
+      DB_PWD: MZhauW4KEwqfYSOgnDNo
+      DB_HOST: bia-labs-4-2.cluster-c03m8ueqgif2.us-east-1.rds.amazonaws.com
       DB_PORT: 5432
