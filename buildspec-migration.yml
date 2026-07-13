@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 21
+    commands:
+      - echo Instalando dependências do projeto...
+      - npm install --loglevel=error
+
+
+  build:
+    commands:
+      - echo migration iniciado em `date`
+      - npx sequelize db:create
+      - npx sequelize db:migrate
